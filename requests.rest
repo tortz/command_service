@@ -1,0 +1,47 @@
+#Local
+https://localhost:6001/api/c/platforms
+
+POST http://localhost:6000/api/c/platforms HTTP/1.1
+Content-Type: application/json
+
+{ 
+}
+
+#GetCommands for Platform 
+http://localhost:6000/api/c/platforms/8/commands
+
+#GetCommand
+http://localhost:6000/api/c/platforms/7/commands/1
+
+#Create Command
+POST http://localhost:6000/api/c/platforms/8/commands HTTP/1.1
+Content-Type: application/json
+
+{
+    "HowTo": "Build docker",
+    "CommandLine": "docker build ."
+}
+
+
+
+
+#KUBERNETES -----------------------------------------------------
+http://acme.com/api/c/platforms
+
+
+#PING
+POST http://acme.com/api/c/platforms HTTP/1.1
+Content-Type: application/json
+
+{
+}
+
+#Create Command
+POST http://acme.com/api/c/platforms/10/commands HTTP/1.1
+Content-Type: application/json
+
+{
+    "HowTo": "Build docker",
+    "CommandLine": "docker build ."
+}
+
