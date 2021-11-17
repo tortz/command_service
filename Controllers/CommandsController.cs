@@ -55,8 +55,7 @@ namespace CommandService.Controllers
             return _mapper.Map<CommandReadDto>(command);
         }
 
-                // POST: api/Commands
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Commands
         [HttpPost]
         public async Task<ActionResult<CommandReadDto>> CreateCommand(int platformId, CommandCreateDto commandDto)
         {
